@@ -2,7 +2,7 @@ import { Hono } from "hono";
 
 const app = new Hono();
 
-app.get("/api/posts/:slug/comments", async (c) => {
+app.get("/", async (c) => {
 	return c.text("Hello, Hono!");
 });
 
